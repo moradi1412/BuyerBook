@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book inspection</title>
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+       <h1> Welcome to Book inspection website</h1>
+    </nav>
+
+    <section class="my-4 flex-row justify-space-between ">
+        <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+          <h3 class="text-light">Enter a new book</h3>
+          <form id="book-form">
+              <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="book-name" class="form-label">Book Name </label>
+                <input type="text" id="book-name" name="book-name" class="form-input" placeholder="Enter Name">
+              </div>
+              <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="author-name" class="form-label">Author</label>
+                <input type="text" id="author-name" name="author-name" class="form-input" placeholder="Enter the author name">
+              </div>
+              <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="yearPublished" class="form-label">Published year </label>
+                <input type="text" id="yearPublished" name="yearPublished" class="form-input" placeholder="Year">
+              </div>
+
+              <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="category" class="form-label">Enter the category</label>
+                <input type="text" id="category" name="category" class="form-input" placeholder="Your name">
+              </div>
+              <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="reviewers" class="form-label">Enter you name?</label>
+                <input type="text" id="reviewers" name="review-name" class="form-input" placeholder="Your name">
+              </div>
+              <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="Comments" class="form-label">Enter your comments</label>
+                <input type="text" id="comments" name="comment" class="form-input" placeholder="Your name">
+              </div>
+  
+            <button class="btn btn-light">add books</button>
+          </form>
+        </div>
+        </div>
+        <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
