@@ -1,5 +1,5 @@
 const $bookform = document.querySelector('#book-form');
-
+const bookContent = document.getElementById("bookContent")
 const handleBookFormSubmit = event => {
   event.preventDefault();
 
