@@ -10,16 +10,63 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-       <h1> Welcome to Book inspection website</h1>
-    </nav>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="">
+      <img
+        src="./assets/img/images.jfif"
+        height="16"
+        alt=""
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
 
-    <section class="my-4 flex-row justify-space-between ">
-        <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-link px-3 me-2">
+          Login
+        </button>
+        <button type="button" class="btn btn-primary me-3">
+          Sign up for free
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+    <div class="row"> 
+        <div class="col-8 col-lg-3 bg-dark p-3 mb-3">
           <h3 class="text-light">Enter a new book</h3>
           <form id="book-form">
               <div class='col-auto mb-2'>
-                <label class="text-light flex-row" for="book-name" class="form-label">Book Name </label>
+                <label class="text-light flex-row" for="book-name" class="form-label">Book Title </label>
                 <input type="text" id="book-name" name="book-name" class="form-input" placeholder="Enter Name">
               </div>
               <div class='col-auto mb-2'>
@@ -27,8 +74,24 @@
                 <input type="text" id="author-name" name="author-name" class="form-input" placeholder="Enter the author name">
               </div>
               <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="country" class="form-label">County:  </label>
+                <input type="text" id="country" name="country" class="form-input" placeholder="Year">
+              </div>
+              <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="language" class="form-label">Language </label>
+                <input type="text" id="language" name="language" class="form-input" placeholder="Year">
+              </div>
+              <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="pages" class="form-label">pages:  </label>
+                <input type="text" id="pages" name="pages" class="form-input" placeholder="Year">
+              </div>
+              <div class='col-auto mb-2'>
                 <label class="text-light flex-row" for="yearPublished" class="form-label">Published year </label>
                 <input type="text" id="yearPublished" name="yearPublished" class="form-input" placeholder="Year">
+              </div>
+              <div class='col-auto mb-2'>
+                <label class="text-light flex-row" for="imglink" class="form-label">img link: </label>
+                <input type="text" id="imglink" name="imglink" class="form-input" placeholder="Enter Name">
               </div>
 
               <div class='col-auto mb-2'>
@@ -42,12 +105,14 @@
               <div class='col-auto mb-2'>
                 <label class="text-light flex-row" for="Comments" class="form-label">Enter your comments</label>
                 <input type="text" id="comments" name="comment" class="form-input" placeholder="Your name">
-              </div>
-  
+              </div>  
             <button class="btn btn-light">add books</button>
           </form>
         </div>
-        </div>
+
+        <div id="bookContent" class="col bg-light">fgsdfgfdsgdf</div>
+
+    
         <script src="./assets/js/script.js"></script>
     
 </body>
