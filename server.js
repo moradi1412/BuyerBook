@@ -1,5 +1,5 @@
 const express = require('express');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 const app = express();
 const fs = require('fs');
 const path = require('path');
@@ -21,6 +21,11 @@ function createNewBooks(body, booksArray) {
   return book; 
 }
 
+
+app.get('/api/books', (req, res) => {
+  let results = books;  
+  res.json(results);
+});
 
 app.post('/api/books', (req, res) => {
   
