@@ -46,8 +46,9 @@ const printBooks = bookArray => {
 
   const bookHTML = bookArray.map(({author, country, imageLink, language, link, pages, title, year}) => {
     return` 
-    <div class="col-12 col-md-5 mb-3">
+    <div class="col-md-4">
     <div class="card p-3">
+    <a href="#"><i class="bi bi-bookmark-heart text-success float-end" style="font-size: 2rem"></i></a>
     <img src="./assets/${imageLink}" alt="book-image" class="img-thumbnail"/>
       <h4 class="text-primary">${title}</h4>
       <p>Author: ${author}<br/>
