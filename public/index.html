@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book inspection</title>
     <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <title>Book Inspection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Book Club</title>
 </head>
 <body>
 
@@ -15,7 +15,10 @@
 <!-- Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
       <div class="container">
-        <a href="#" class="navbar-brand">Book Inspection</a>
+        
+        <a href="#" class="navbar-brand">
+          <i class="bi bi-book text-success"></i>
+          Book Club</a>
 
         <button class="navbar-toggler type="button" 
         data-bs-toggle="collapse" data-bs-target="#navmenu"
@@ -43,19 +46,19 @@
     <img class="img-fluid" src="assets/img/benchbooks.jpg" alt=""/>
 
     <section class="p-5 text-success">
-      <h2>A website that placeholder text</h2>
-      
-        Search through Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae a harum voluptate alias! A voluptatum, exercitationem neque ad, at nihil nam quia provident asperiores amet eaque, obcaecati voluptatibus nulla vitae?
+      <h2 class="fw-light">September's Recommended Reading</h2>
+      <p class="text-dark">
+        Monthly inspiration for your book club. See what your friends are reading. Join the conversation.
+      </p>
 
  
     </section>
 
-<!--Form section-->
+<!--Form section
     <section class="bg-dark p-5">
       <div class="container">
         <div class="row justify-content-between">
-  
-        <!--Form-->
+
         <div class="card col bg-dark p-4">
           <h3 class="text-light">Enter a New Book</h3>
           <form id="book-form">
@@ -100,12 +103,70 @@
       </div>
 
       </div>
-      </div>
-     
-      </section>
+    </div>
+  </section>
+-->
 
-     
-        <script src="./assets/js/script.js"></script>
+<!-- Book Section -->
+<section class="p-5 bg-success bg-gradient">
+  <div class="container">
+      <div class="row g-3">
+
+          <!-- Book card one -->
+          <div class="col-md-6 col-lg-4">
+              <div class="card bg-light">
+                  <div class="card-body">
+                    <a href="#"><i class="bi bi-bookmark-heart text-success float-end" style="font-size: 2rem"></i></a>
+                      <img src="./assets/images/things-fall-apart.jpg" class="img-fluid" alt="">
+                      <h3 class="m-3 fw-light text-success">Things Fall Apart</h3>
+                      <p class="m-3 card-text">
+                        Things Fall Apart is the first of three novels in Chinua Achebe's critically acclaimed African Trilogy. It is a classic narrative about Africa's cataclysmic encounter with Europe as it establishes a colonial presence on the continent. Told through the fictional experiences of Okonkwo, a wealthy and fearless Igbo warrior of Umuofia in the late 1800s, Things Fall Apart explores one man's futile resistance to the devaluing of his Igbo traditions by British political andreligious forces and his despair as his community capitulates to the powerful new order.
+                      </p>
+       
+                  </div>
+              </div>
+          </div>
+
+            <!-- Book card two -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card bg-light">
+                  <div class="card-body text-dark">
+                    <a href="#"><i class="bi bi-bookmark-heart text-success float-end" style="font-size: 2rem"></i></a>
+                      <img src="./assets/images/invisible-man.jpg" class="img-fluid" alt="">
+                      <h3 class="m-3 fw-light text-success">Invisible Man</h3>
+                      <p class="m-3 card-text">
+                        Originally published in 1952 as the first novel by a then unknown author, it remained on the bestseller list for sixteen weeks, won the National Book Award for fiction, and established Ralph Ellison as one of the key writers of the century. 
+
+                        The book's nameless narrator describes growing up in a black community in the South, attending a Negro college from which he is expelled, moving to New York and becoming the chief spokesman of the Harlem branch of "the Brotherhood", before retreating amid violence and confusion to the basement lair of the Invisible Man he imagines himself to be.  
+                      </p>
+       
+                  </div>
+              </div>
+          </div>
+
+
+            <!-- Book card three -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card bg-light">
+                  <div class="card-body text-dark">
+                    <a href="#"><i class="bi bi-bookmark-heart text-success float-end" style="font-size: 2rem"></i></a>
+                      <img src="./assets/images/tales-and-poems-of-edgar-allan-poe.jpg" class="img-fluid" alt="">
+                      <h3 class="m-3 fw-light text-success">Edgar Allan Poe: Complete Tales and Poems</h3>
+                      <p class="m-3 card-text">
+                        The life of American writer Edgar Allan Poe was characterized by a dramatic series of successes and failures, breakdowns and recoveries, personal gains and hopes dashed through, despite which he created some of the finest literature the world has ever known. Over time his works have influenced such major creative forces as the French poets Charles Baudelaire and Andre Gide, filmmaker D.W. Griffith and modern literary legend Allen Ginsberg.
+                      </p>
+       
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+
+
+<script src="./assets/js/script.js"></script>
     
 </body>
 </html>
